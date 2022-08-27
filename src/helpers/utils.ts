@@ -29,11 +29,3 @@ export const getHighestQualityFormat = (formats: Formats): string => {
 export const isVideoFormSubmitDisabled = (formValues: ProcessedVideo): boolean => {
   return !(formValues.name && formValues.author && !!formValues.categories.length);
 };
-
-export const generateVideoId = (videos: ProcessedVideo[]) => {
-  const count = 20 //to add upto 20 videos
-  for(let i=1; i <= count; i++) {
-    const video = videos.find(vid => vid.id === i)
-    if(!video) return i
-  }
-}

@@ -5,8 +5,8 @@ import { ProcessedVideo } from '../../common/interfaces';
 import ConfirmationDialog from '../../components/Dialog';
 import SubHeader from '../../components/SubHeader';
 import { VideosTable } from '../../components/VideoTable';
-import { useAppDispatch, useAppSelector } from '../../hooks/store-hooks';
-import { del, fetchVideos } from '../../VideosSlice';
+import { useAppDispatch } from '../../hooks/store-hooks';
+import { del } from '../../VideosSlice';
 import {
   DIALOG_DELETE_VIDEO_DESCRIPTION_TEXT,
   DIALOG_DELETE_VIDEO_TITLE_TEXT,

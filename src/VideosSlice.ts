@@ -27,7 +27,6 @@ const VideoSlice = createSlice({
       };
       const newVideo = {
         ...action.payload,
-        id: state.videoList.length + 1,
         format: getHighestQualityFormat(formats),
         releaseDate: '2022-08-09',
       };
